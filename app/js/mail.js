@@ -9,7 +9,8 @@ $(document).ready(function(){
 		            data: "nombre="+nombre+"&correo="+correo+"&mensaje="+mensaje,  
 					success: function(data){
 						//function success_submit();
-						alert(data);
+						//alert(data);
+                        console.log('enviado');
 					}
 
     		})	
