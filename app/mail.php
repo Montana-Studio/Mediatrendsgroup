@@ -1,7 +1,6 @@
 <?php
 // Varios destinatarios
-//$para  = 'asepulveda@mediatrends.cl';
-$para  = 'elperoy@gmail.com';
+$para  = 'asepulveda@mediatrends.cl';
 
 // titulo
 $titulo = 'Contacto Media Trends Group';
@@ -27,10 +26,10 @@ $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 $cabeceras .= "Content-type: text/html; charset=UTF-8\r\n";
 
 // Cabeceras adicionales
-$cabeceras .= "From: no-reply@mediatrends.com\r\n";
-$cabeceras .= "Return-Path: no-reply@mediatrends.com\r\n";
+$cabeceras .= "From: no-reply@mediatrendsgroup.com\r\n";
+$cabeceras .= "Return-Path: no-reply@mediatrendsgroup.com\r\n";
 
 
 // Enviarlo
-mail($para, $titulo, $message, $cabeceras,'-fno-reply@mediatrends.com');
+mail($para, $titulo, $message, $cabeceras,'-fno-reply@mediatrendsgroup.com');
 ?>
