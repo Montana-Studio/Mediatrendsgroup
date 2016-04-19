@@ -1,0 +1,37 @@
+body {
+	margin:0;
+	padding: 0;
+	font:{family:$primary_font;}
+	position: relative;
+	.titleMTG {
+		@include span-columns(12);
+		font:{family:$primary_font;size:1.1em;}
+		color:$blackcolor;
+		text:{transform:uppercase;align:center;}
+		float: none;
+		@include media($notebook) {
+			font:{size:2em;}
+		}
+		&.title-white {
+			color: $whitecolor;
+		}
+	}
+	.line-title {
+		width: 50px;
+		background:$blackcolor;
+		height: 3px;
+		margin:0 auto;
+		display: block;
+		margin:{bottom:20px;}
+		&.title-white {
+			background: $whitecolor;
+		}
+	}
+}
+.mobile-desktop {
+	display: none;
+	@include media($notebook) {
+		display: block;
+	} 
+}
+

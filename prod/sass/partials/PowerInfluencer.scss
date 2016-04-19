@@ -1,0 +1,96 @@
+.PowerInfluencer-Section {
+	@include span-columns(12);
+	background-image: url(../img/power-influencer-bg.jpeg);
+	background-size: cover;
+	padding: 30px 0;
+	@include media($notebook) {
+		padding:{top:50px;bottom:70px;}
+	}
+	.logotipo-powerinfluencer-Home {
+		@include span-columns(7);
+		margin:0 auto !important;
+		float: none;
+		@include media($notebook) {
+			@include span-columns(3);
+			margin:0 auto !important;
+			float: none;
+			padding: 20px 0;
+		}
+	}
+	.content-PI {
+		@include outer-container(80%);
+		@include media($notebook) {
+			@include outer-container(70%);
+			padding: 50px 0;
+		}
+		.contentAllPI {
+			@include span-columns(12);
+			@include media($notebook) {
+				display: table;
+			}
+			.info-PI {
+				@include span-columns(12);
+				@include media($notebook) {
+					@include span-columns(5);	
+					float: none;
+					display: table-cell;
+					vertical-align: middle;
+				}
+				.title-PI {
+					@include span-columns(10);
+	    			font:{size:2em;weight: 300;}
+	    			line-height: 38px;
+	    			color: $greenPI;
+	    			margin:{bottom:8px;}
+	    			@include media($notebook) {
+	    				@include span-columns(12);
+						font:{size: 3.75em;weight: 300;}
+						line-height: 65px;
+	    			}
+				}
+				.texto-PI {
+					@include span-columns(12);
+					font:{size: 16px;weight: 300;}
+					color: $grisPI;
+					letter-spacing: 1px;
+					margin:{top: 0;bottom: 20px;}
+					line-height: 1.6em;
+					@include media($notebook) {
+						font:{size: 19px;}
+						line-height: 1.8em;
+						margin:{top:15px;bottom:30px;}
+					}
+				}
+				.button-Pi {
+					@include span-columns(6);
+					border: 1px solid $greenPI;
+	    			border-radius: 5px;
+	    			text-transform: uppercase;
+	    			text:{align:center;}
+	    			a {
+	    				text:{decoration:none;}
+	    				font:{size: 12px;}
+	    				padding: 10px 20px;
+	    				width: 100%;
+	    				height: 100%;
+	    				display: block;
+	    				color: $greenPI;
+	    			}
+				}
+			}
+			.content-home-PI {
+				@include span-columns(12);
+				margin:{top:30px;}
+				@include media($notebook) {
+					@include span-columns(7);	
+					float: right;
+				}
+				img {
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}	
+		}
+	}
+}

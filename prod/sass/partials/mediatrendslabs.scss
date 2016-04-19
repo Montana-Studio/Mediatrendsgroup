@@ -1,0 +1,68 @@
+.mediatrendsLabsSection {
+	@include span-columns(12);
+	background-image: url(../img/mediatrendslabs-bg.jpg);
+	background-size: cover;
+	padding: 30px 0;
+	height: 700px;
+	display: table;
+	@include media($notebook) {
+		height: 1000px;
+	}
+	.contentMediaLabs {
+		display: table-cell;
+		vertical-align: middle;
+		text:{align:center;}
+		.logotipe-mediatrendslabsHome {
+			@include outer-container(50%);
+			float: none;
+			margin: 0 auto;
+			@include media($notebook) {
+				@include outer-container(20%);
+				float: none;
+				margin: 0 auto;
+			}
+			svg {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
+		.textoHomeMTL {
+			@include outer-container(90%);
+			float: none;
+			margin: 0 auto;
+			@include media($notebook) {
+				@include outer-container(30%);
+				float: none;
+				margin: 0 auto;
+			}
+			mark {
+				background: $whitecolor;
+				color:$mediatrendsLabs;
+				font:{size: 18px;weight:bold;}
+    			line-height: 31px;
+    			padding: 0 10px;
+			}
+		}
+		.btn-MTLabs {
+			@include span-columns(12);
+			margin:{top:20px;}
+			a {	
+				@include outer-container(45%); 
+					@include media($notebook) {
+					@include outer-container(10%);
+					float: none;
+					margin: 0 auto;
+				}
+				float: none;
+				display: block;
+				margin: 0 auto;
+				border: 1px solid $mediatrendsLabs;
+				color:$mediatrendsLabs;
+				text:{transform:uppercase;decoration:none;}
+				font:{weight:bold;size:13px;}
+				padding: 10px 20px;
+			}
+		}
+	}
+}

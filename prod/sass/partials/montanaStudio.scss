@@ -1,0 +1,110 @@
+.montanaStudio {
+	@include span-columns(12);
+	background-image: url(../img/montana-studio-bg.jpg);
+	background-size: cover;
+	padding:0;
+	.middle-montana {
+		@include outer-container(90%);
+		margin:20px auto;
+		float: none;
+		height: 600px;
+		position: relative;
+		@include media($notebook) {
+			@include span-columns(6);
+			float: right;
+			margin:0;
+			height: 1000px;
+		}
+		.content-montana {
+			@include span-columns(12);
+			position: absolute;
+			z-index: 999;
+			.logotipo-montana-studio {
+				@include outer-container(70%);
+				float: none;
+				margin: {top:30px;left: auto !important;bottom:25px; right: auto !important;}
+				@include media($notebook) {
+					@include outer-container(40%);
+					float: none;
+					margin:{top:80px;left:auto;bottom:30px;right:auto;}
+				}	
+				svg {
+					width: 100%;
+					height: 100%;
+					display: block;
+				}
+			}
+			.lista-montana {
+				@include outer-container(90%);
+				float: none;
+				margin:{top:0;left: auto;bottom:20px;right:auto;}
+				@include media($notebook) {
+					@include outer-container(40%);
+					float: none;
+					margin:{top:50px;left:auto;bottom:30px;right:auto;}
+				}
+				.icon-montana {
+					@include span-columns(3);
+					text:{align: center;}
+    				padding:{top: 26px;}
+					i {
+						font-size: 38px;
+    					color: $magentaMontana;
+    					@include media($notebook) {
+    						font:{size: 62px;}
+    					}
+					}
+				}
+				.content-lista-montana {
+					@include span-columns(9);
+					padding:{left:10px;}
+					border:none;
+					border-left:2px solid $magentaMontana;
+					h2 {
+						color:$whitecolor;
+						text:{transform:uppercase;}
+						font:{size: 16px;}
+						margin:5px 0;
+					}
+					p {
+						color:$whitecolor;
+						font:{size: 12px;}
+						margin:{top:5px;}
+					}
+				}
+			}
+			.boton-montana {
+				@include span-columns(12);
+				float:none;
+				margin:0 auto;
+				text:{align:center;}
+				@include media($notebook) {
+					margin:{top:30px;}
+				}
+				a {
+					@include outer-container(50%);
+					text:{decoration:none;transform:uppercase;}
+					color:#fff;
+					background:#fc6aae;
+					padding: 11px 40px;
+					border-radius: 5px;
+					font-size: 13px;
+					margin: 0 auto;
+					display: block;
+					@include outer-container(40%);
+					display: block;
+					margin:0 auto;
+					float: none;
+				}
+			}
+		}
+		.montana-bgMiddle {
+			background: $blackcolor;
+			opacity: 0.7;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 99;
+		}
+	}
+}

@@ -1,0 +1,146 @@
+.homeSection {
+	@include span-columns(12);
+	height: 670px;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	@include media($notebook) {
+		height: 900px;
+	}
+	.parallax-window {
+	    min-height: 400px;
+	    height: 670px;
+	    background: transparent;
+	    @include media($notebook) {
+	    	height: 900px;
+	    }
+	}
+	.content-logotipes {
+		@include span-columns(12);
+		text:{align:center;}
+		height: 100%;
+		display: table;
+		.center-icon {
+			@include span-columns(12);
+			float: none;
+			display: table-cell;
+			vertical-align: middle;
+			.mediatrends-group {
+				@include outer-container(60%);
+				a {
+					width: 100%;
+					height: auto;
+					svg {
+						width: 100%;
+						height: auto;
+						display: block;
+					}
+				}
+				@include media($notebook) {
+				display: none;
+				}
+			}
+			.logotipos-home {
+				@include span-columns(12);
+				text:{align:center;}
+				ul {
+					@include span-columns(12);
+					margin:0 auto;
+					display: table-cell;
+					vertical-align: middle;
+					@include media($notebook) {
+						@include outer-container(80%);
+						margin:0 auto !important;
+						padding: 0;
+						display: block;
+						float: none;
+					}
+					li {
+						list-style: none;
+						display: inline-block;
+						@include span-columns(5);
+						height: 134px;
+						@include media($notebook) {
+							@include span-columns(1.8);
+							display: inline-block;
+							float: none;
+						}
+						.logotipe-box {
+							width: 100%;
+							height: 100%;
+							display: table;
+							a {
+								width: 100%;
+								height: auto;
+								display:table-cell;
+								vertical-align: middle;
+								margin: 0 auto !important;
+								svg {
+									width: 100%;
+									height: auto;
+									display: block;
+								}
+								img {
+									width: 100%;
+									height: auto;
+									display: block;
+									@include media($notebook) {
+										width: 130%;
+									}
+								}
+								&.logo-mediatrendslab {
+									svg {
+										width: 80%;
+										margin: 0 auto;
+									}
+								}
+								&.logo-MTG {
+									display: none;
+									@include media($notebook) {
+										display: block;
+									}
+								}	
+								&.logo-mediatrends {
+									svg {
+										width: 80%;
+										margin:0 auto;
+									}
+								}
+							}
+						}
+						&.logo-MTG-Mobile {
+							display: none;
+							@include media($notebook) {
+								@include span-columns(4);
+								float: none;
+								display:inline-block;
+								.logotipe-box {
+									margin:{top:-185px;}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.texto-homMTG {
+		@include span-columns(12);
+		text:{align:center;}
+		display: table;
+		position: absolute;
+		bottom: 38px;
+    	color: $whitecolor;
+    	font-size: 13px;
+		padding: 0 20px;
+		mark {
+			color: $blackcolor;
+			background:$whitecolor;
+		}
+    	@include media($notebook) {
+    		font-size: 25px;
+    		bottom: 180px; 
+    		padding: 0 400px;
+    	}
+	}
+}	

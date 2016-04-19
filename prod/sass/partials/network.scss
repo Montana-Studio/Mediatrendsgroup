@@ -1,0 +1,108 @@
+.networkSection {
+	@include span-columns(12);
+	text:{align:center;}
+	.parallax-window {
+		padding:30px 0;
+		@include media($notebook) {
+			padding:50px 0;
+		}	
+	}
+	.content-subcontenido {
+		margin:{bottom:50px;}
+		p {
+			@include outer-container(90%);
+			margin: 0 auto;
+			display: block;
+			float: none;
+			&.bajada-title {
+				font:{size:0.9em;weight:bold;}
+				color:$whitecolor;
+				margin:{bottom:10px;}
+			}	
+			&.texto-section {
+				font:{size:0.8em;}
+				color:$whitecolor;
+				margin:{bottom:10px;}
+			}
+			span {
+				font:{weight:bold;style:italic;}
+			}
+		}
+		.box-logos {
+			width: 100%;
+        	height: 300px;
+        	.wrapper-box-logos {
+        		.one-box-logos {
+	        		width:300px;
+					height: 100%;
+					display: -webkit-box;
+			        display: -ms-flexbox;
+			        display: -webkit-flex;
+			        display: flex;
+			        -webkit-box-pack: center;
+			        -ms-flex-pack: center;
+			        -webkit-justify-content: center;
+			        justify-content: center;
+			        -webkit-box-align: center;
+			        -ms-flex-align: center;
+			        -webkit-align-items: center;
+			        align-items: center;	
+			        ul {
+						@include outer-container(80%);
+						margin: 0 auto !important;
+						padding: 0;
+						text:{align:center;}
+						@include media($notebook) {
+							@include outer-container(60%);
+							margin:{top:40px !important;}
+						}
+						li {
+							@include span-columns(5);
+							list-style: none;
+							float: none;
+							display: inline-block;
+							margin:{right:10px;}
+							@include media($notebook) {
+								@include span-columns(3);
+							}
+							a {
+								@include outer-container(80%);
+								height: 100px;
+								display: table;
+								@include media($notebook) {
+									@include outer-container(60%);
+								}
+								svg {
+									display: table-cell;
+									vertical-align: middle;
+									width:100%; 
+									height: auto;
+									display: block;
+				   					margin: 0 auto;
+				   					fill:$whitecolor;
+				   					path {
+				   						fill:$whitecolor;
+				   					}
+								}
+								img {
+			   						display: table-cell;
+									vertical-align: middle;
+									width:100%; 
+									height: auto;
+				   					margin: 0 auto;
+			   					}
+			   					&.lalegal-logo {
+			   						width: 100%;
+			   						max-width: 100%;
+			   						img {
+			   							padding: 30px 0;
+			   						}
+			   					}
+							}
+						}
+					}
+        		}
+        	}
+		}
+	}
+}

@@ -1,0 +1,211 @@
+.mediatrendsSection {
+	@include span-columns(12);
+	background:$blackcolor;
+	position: relative;
+	height: 800px;
+	@include media($notebook) {
+		height: 1000px;
+	}
+	.contentMediaTrends {
+		@include span-columns(12);
+		position: absolute;
+		z-index: 99;
+		padding: {top:20px;}
+		@include media($notebook) {
+			padding: {top:80px;}
+		}
+		.logotipo-mediatrends-home {
+			@include outer-container(35%);
+			float: none;
+			margin: 0 auto;
+			@include media($notebook) {
+				@include outer-container(14%);
+			}
+			svg {
+				width: 100%;
+				height: auto;
+				display: block;
+				fill:$whitecolor;
+			}
+		}
+		.title-mediatrends {
+			@include outer-container(90%);
+			float: none;
+			margin: 0 auto;
+			text:{align:center;}
+			@include media($notebook) {
+				@include outer-container(80%);
+				margin:{top:40px;left: auto;bottom:100px;right:auto;}
+			}
+			.contenidoTituloMtg {
+				@include media($notebook) {
+					@include outer-container(60%);
+					margin:0 auto;
+					float: none;	
+				}
+			}
+			h2 {
+				font:{size: 17px;}
+				margin:{top:5px;}
+				mark {
+					background: $whitecolor;
+					padding: 0 5px;
+				}
+				&.nuestros-canales {
+					margin-top:50px;
+					@include media($notebook) {
+						margin-top:90px;
+					}
+				}
+			}
+			h3 {
+				margin:{bottom:5px;}
+
+				mark {
+					background: $whitecolor;
+					padding: 0 5px;
+				}
+			}
+			.line-title {
+				background: $whitecolor;
+			}
+			.mediatrends-info {
+				color:$whitecolor;
+				font:{size: 14px;}
+	    		line-height: 24px;
+			}
+			p {
+				&.texto-section {
+					font:{size:0.8em;}
+					color:$whitecolor;
+					margin:{bottom:10px;}
+				}
+			}
+			.box-logos {
+				width: 100%;
+	        	height: 300px;
+	        	@include media($notebook) {
+	        		height: 200px;
+	        	}
+	        	.wrapper-box-logos {
+	        		.one-box-logos {
+		        		width:300px;
+						height: 100%;
+						display: -webkit-box;
+				        display: -ms-flexbox;
+				        display: -webkit-flex;
+				        display: flex;
+				        -webkit-box-pack: center;
+				        -ms-flex-pack: center;
+				        -webkit-justify-content: center;
+				        justify-content: center;
+				        -webkit-box-align: center;
+				        -ms-flex-align: center;
+				        -webkit-align-items: center;
+				        align-items: center;	
+				        ul {
+							@include outer-container(80%);
+							margin: 0 auto !important;
+							padding: 0;
+							text:{align:center;}
+							@include media($notebook) {
+								@include outer-container(60%);
+								margin:{top:40px !important;}
+							}
+							li {
+								@include span-columns(5);
+								list-style: none;
+								float: none;
+								display: inline-block;
+								margin:{right:10px;}
+								@include media($notebook) {
+									@include span-columns(3);
+								}
+								a {
+									@include outer-container(80%);
+									height: 100px;
+									display: table;
+									@include media($notebook) {
+										@include outer-container(60%);
+									}
+									svg {
+										display: table-cell;
+										vertical-align: middle;
+										width:100%; 
+										height: auto;
+										display: block;
+					   					margin: 0 auto;
+					   					fill:$whitecolor;
+					   					path {
+					   						fill:$whitecolor;
+					   					}
+									}
+									img {
+				   						display: table-cell;
+										vertical-align: middle;
+										width:100%; 
+										height: auto;
+					   					margin: 0 auto;
+				   					}
+				   					&.ChicfitDaily {
+				   						max-width: 90%;
+				   						margin:{top: -20px;}
+				   					}
+				   					&.lalegal-logo {
+				   						width: 100%;
+				   						max-width: 100%;
+				   						img {
+				   							padding: 30px 0;
+				   						}
+				   					}
+				   					&.disorder-logo {
+				   						width: 100%;
+				   						max-width: 100%;
+				   						img {
+				   							padding: 10px 0;
+				   						}
+				   					}
+				   					&.pousta-logo {
+				   						width: 100%;
+				   						max-width: 90%;
+				   						img {
+				   							padding: 30px 0;
+				   						}
+				   					}
+				   					&.myp-logo {
+				   						width: 100%;
+				   						max-width: 90%;
+				   						img {
+				   							padding: 10px 0;
+				   						}
+				   					}
+								}
+							}
+						}
+	        		}
+	        	}
+	        	.swiper-pagination {
+	        		.swiper-pagination-bullet {
+	        			background: #cdcaca;
+	        			&.swiper-pagination-bullet-active {
+	        				background: $whitecolor;
+	        			}
+	        		}
+	        	}
+			}
+		}
+	}
+	.mediatrends-bg {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-image:url(../img/mediatrends-bg.png);
+		opacity: 0.3;
+	}
+	.swiper-button-next {
+		background-image:url(../img/arrow-right.png);
+	}
+	.swiper-button-prev {
+		background-image:url(../img/arrow-left.png);
+	}
+}
