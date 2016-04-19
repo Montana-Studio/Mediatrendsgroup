@@ -51,9 +51,12 @@
 						font-size: 38px;
     					color: $magentaMontana;
     					@include media($notebook) {
-    						font:{size: 62px;}
+    						font:{size: 42px;}
     					}
 					}
+                    @include media($notebook) {
+                        padding:{top:46px;}
+                    }
 				}
 				.content-lista-montana {
 					@include span-columns(9);
