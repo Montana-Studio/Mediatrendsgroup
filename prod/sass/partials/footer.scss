@@ -185,7 +185,7 @@
 		color:$whitecolor;
 		font:{size: 11px;}
 		text:{align:center;}
-		padding:{bottom:20px;}
+		padding:{bottom:10px;}
 		@include media($notebook) {
 			@include span-columns(6);
 			margin:0;
