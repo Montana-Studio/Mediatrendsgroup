@@ -10,7 +10,9 @@
 	<link rel="stylesheet" target="_blank" href="css/swiper.min.css">
 	<link rel="stylesheet" target="_blank" href="css/_MediatrendsGroup.css">
 	<script src="js/jquery.min.js"></script>
-	
+	<script src="js/parallax.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/_MediatrendsGroup.min.js"></script>
 </head>
 <body>
 	<section class="homeSection">
@@ -4866,10 +4868,10 @@
 			<div class="contactar-form">
 				<div class="close-form"><i class="fa fa-close"></i></div>
 				<h3>Contactanos</h3>
-				<form>
-					<input class="input-form" type="text" placeholder="Nombre" id="nombre">
-					<input class="input-form" type="email" placeholder="Correo" id="correo">
-					<textarea class="input-form" name="" cols="30" rows="10" placeholder="Mensaje" id="mensaje"></textarea>
+				<form action="">
+					<input class="input-form" type="text" placeholder="Nombre">
+					<input class="input-form" type="email" placeholder="Correo">
+					<textarea class="input-form" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
 					<input class="input-form enviar-submit" type="submit" value="Enviar">
 				</form>
 			</div>
@@ -4890,10 +4892,6 @@
 			<i class="fa fa-copyright"></i>bibendum condimentum sapien scelerisque, semper gravida arcu.
 		</div>
 	</div>
-	<script src="js/parallax.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/_MediatrendsGroup.min.js"></script>
-	<script src="js/mail.js"></script>
 	<script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    	$('.enviar-submit').on('click', function(){
+    	$('form').on('submit', function(){
     		var nombre = $('#nombre').val();
     		var correo = $('#correo').val();
     		var mensaje = $('#mensaje').val();
@@ -8,11 +8,10 @@ $(document).ready(function(){
 		            url: "mail.php",  
 		            data: "nombre="+nombre+"&correo="+correo+"&mensaje="+mensaje,  
 					success: function(data){
-						//function success_submit();
-						//alert(data);
-                        console.log('enviado');
+						//funcion de respuesta al correo
 					}
 
     		})	
     	});
+
     });
