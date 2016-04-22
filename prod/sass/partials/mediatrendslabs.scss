@@ -113,6 +113,13 @@
 				text:{transform:uppercase;decoration:none;}
 				font:{weight:bold;size:13px;}
 				padding: 10px 20px;
+				border-radius: 5px;
+				@include transition(all 0.3s ease-in-out);
+				&:hover {
+					background:$mediatrendsLabs;
+					color:$whitecolor;
+					border: 1px solid $mediatrendsLabs;
+				}
 			}
 		}
 	}

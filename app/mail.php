@@ -1,6 +1,6 @@
 <?php
 // Varios destinatarios
-$para  = 'asepulveda@mediatrends.cl';
+$para  = 'marlene@mediatrends.cl';
 
 // titulo
 $titulo = 'Contacto Media Trends Group';
@@ -31,5 +31,7 @@ $cabeceras .= "Return-Path: no-reply@mediatrendsgroup.com\r\n";
 
 
 // Enviarlo
-mail($para, $titulo, $message, $cabeceras,'-fno-reply@mediatrendsgroup.com');
+if (mail($para, $titulo, $message, $cabeceras,'-fno-reply@mediatrendsgroup.com')){
+	echo 'exito';
+}
 ?>

@@ -2,8 +2,9 @@
 	@include transition(slideUp 1s ease);
 	visibility: visible !important;		
 	display: block;	
+	background: red;
 }
-@include keyframes (slideUp) {
+@include keyframes(slideUp) {
 	0% {
 		@include transform(translateY(100%));
 		bottom:0;
@@ -29,14 +30,6 @@
 	@include transition(slideDown 1s ease);
 	visibility: visible !important;		
 	display: block;	
-}
-@keyframes slideUp {
-	0% {
-		
-	}
-	100% {
-		bottom:-400px;
-	}	
 }
 .form-salida {
 	@include transition(form-salida 2.0s ease-in-out);

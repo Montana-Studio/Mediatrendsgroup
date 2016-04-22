@@ -901,7 +901,10 @@ body {
           border: 1px solid #02b794;
           border-radius: 5px;
           text-transform: uppercase;
-          text-align: center; }
+          text-align: center;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
           .PowerInfluencer-Section .content-PI .contentAllPI .info-PI .button-Pi:last-child {
             margin-right: 0; }
           @media screen and (min-width: 48em) and (max-width: 63.9375em) {
@@ -919,6 +922,12 @@ body {
             height: 100%;
             display: block;
             color: #02b794; }
+          .PowerInfluencer-Section .content-PI .contentAllPI .info-PI .button-Pi:hover {
+            background: #02b794;
+            color: #fff;
+            border: 1px solid #02b794; }
+            .PowerInfluencer-Section .content-PI .contentAllPI .info-PI .button-Pi:hover a {
+              color: #fff; }
       .PowerInfluencer-Section .content-PI .contentAllPI .content-home-PI {
         float: left;
         display: block;
@@ -1229,12 +1238,16 @@ body {
           text-transform: uppercase;
           color: #fff;
           background: #fc6aae;
+          border: 1px solid #fc6aae;
           padding: 11px 40px;
           border-radius: 5px;
           font-size: 13px;
           margin: 0 auto;
           display: block;
-          float: none; }
+          float: none;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
           .montanaStudio .middle-montana .content-montana .boton-montana a::after {
             clear: both;
             content: "";
@@ -1266,6 +1279,19 @@ body {
                 clear: both;
                 content: "";
                 display: table; } }
+          @media screen and (min-width: 90em) {
+            .montanaStudio .middle-montana .content-montana .boton-montana a {
+              max-width: 30%;
+              margin-left: auto;
+              margin-right: auto; }
+              .montanaStudio .middle-montana .content-montana .boton-montana a::after {
+                clear: both;
+                content: "";
+                display: table; } }
+          .montanaStudio .middle-montana .content-montana .boton-montana a:hover {
+            background: none;
+            color: #fc6aae;
+            border: 1px solid #fc6aae; }
     .montanaStudio .middle-montana .montana-bgMiddle {
       background: #000;
       opacity: 0.7;
@@ -1767,7 +1793,11 @@ body {
         text-decoration: none;
         font-weight: bold;
         font-size: 13px;
-        padding: 10px 20px; }
+        padding: 10px 20px;
+        border-radius: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
         .mediatrendsLabsSection .contentMediaLabs .btn-MTLabs a::after {
           clear: both;
           content: "";
@@ -1816,6 +1846,10 @@ body {
               clear: both;
               content: "";
               display: table; } }
+        .mediatrendsLabsSection .contentMediaLabs .btn-MTLabs a:hover {
+          background: #7e7e7e;
+          color: #fff;
+          border: 1px solid #7e7e7e; }
 
 .footer {
   float: left;
@@ -1874,13 +1908,19 @@ body {
       color: #fff;
       padding: 30px 0;
       display: block;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
       @media screen and (min-width: 64em) and (max-width: 79.9375em) {
         .footer .contactar-mediatrendsGroup .btn-text {
           padding: 80px 0; } }
       @media screen and (min-width: 80em) {
         .footer .contactar-mediatrendsGroup .btn-text {
           padding: 100px 0; } }
+      .footer .contactar-mediatrendsGroup .btn-text:hover {
+        background: #000;
+        color: #fff; }
     .footer .contactar-mediatrendsGroup .contactar-form {
       float: left;
       display: block;
@@ -1898,9 +1938,6 @@ body {
       margin: 0; }
       .footer .contactar-mediatrendsGroup .contactar-form:last-child {
         margin-right: 0; }
-      @media screen and (min-width: 48em) and (max-width: 63.9375em) {
-        .footer .contactar-mediatrendsGroup .contactar-form {
-          bottom: 200px; } }
       @media screen and (min-width: 64em) and (max-width: 79.9375em) {
         .footer .contactar-mediatrendsGroup .contactar-form {
           padding: 90px 60px;
@@ -1929,10 +1966,10 @@ body {
         background: #1e1d1d;
         font-size: 25px;
         padding-top: 13px; }
-      .footer .contactar-mediatrendsGroup .contactar-form .h3 {
+      .footer .contactar-mediatrendsGroup .contactar-form .formulario-contacto .h3 {
         text-align: center;
         text-transform: uppercase; }
-      .footer .contactar-mediatrendsGroup .contactar-form .input-form {
+      .footer .contactar-mediatrendsGroup .contactar-form .formulario-contacto .input-form {
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -1944,24 +1981,30 @@ body {
         margin-bottom: 10px;
         color: #fff;
         outline: none; }
-        .footer .contactar-mediatrendsGroup .contactar-form .input-form:last-child {
+        .footer .contactar-mediatrendsGroup .contactar-form .formulario-contacto .input-form:last-child {
           margin-right: 0; }
-        .footer .contactar-mediatrendsGroup .contactar-form .input-form::-webkit-input-placeholder {
+        .footer .contactar-mediatrendsGroup .contactar-form .formulario-contacto .input-form::-webkit-input-placeholder {
           color: #fff;
           font-style: italic; }
-        .footer .contactar-mediatrendsGroup .contactar-form .input-form::-moz-placeholder {
+        .footer .contactar-mediatrendsGroup .contactar-form .formulario-contacto .input-form::-moz-placeholder {
           color: #fff;
           font-style: italic; }
-        .footer .contactar-mediatrendsGroup .contactar-form .input-form:-moz-placeholder {
+        .footer .contactar-mediatrendsGroup .contactar-form .formulario-contacto .input-form:-moz-placeholder {
           color: #fff;
           font-style: italic; }
-        .footer .contactar-mediatrendsGroup .contactar-form .input-form:-ms-input-placeholder {
+        .footer .contactar-mediatrendsGroup .contactar-form .formulario-contacto .input-form:-ms-input-placeholder {
           color: #fff;
           font-style: italic; }
-        .footer .contactar-mediatrendsGroup .contactar-form .input-form.enviar-submit {
+        .footer .contactar-mediatrendsGroup .contactar-form .formulario-contacto .input-form.enviar-submit {
           background: #fff;
           color: #000;
           font-weight: bold; }
+      .footer .contactar-mediatrendsGroup .contactar-form .form-send {
+        display: none;
+        font-size: 25px;
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 100px 0; }
     .footer .contactar-mediatrendsGroup.FormVisible {
       overflow: visible; }
   .footer .social-MTG {
@@ -2113,7 +2156,10 @@ body {
             background: #fff;
             border-radius: 50%;
             font-size: 30px;
-            text-decoration: none; }
+            text-decoration: none;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
             .footer .info-MTGFooter ul li.linkedin-footer a i {
               border: 0;
               color: #000;
@@ -2121,6 +2167,11 @@ body {
               vertical-align: middle;
               font-size: 24px;
               padding-left: 9px; }
+            .footer .info-MTGFooter ul li.linkedin-footer a:hover {
+              background: none;
+              border: 1px solid #fff; }
+              .footer .info-MTGFooter ul li.linkedin-footer a:hover i {
+                color: #fff; }
   .footer .derechos {
     max-width: 90%;
     margin-left: auto;
@@ -2157,7 +2208,8 @@ body {
   -moz-transition: slideUp 1s ease;
   transition: slideUp 1s ease;
   visibility: visible !important;
-  display: block; }
+  display: block;
+  background: red; }
 
 @-webkit-keyframes slideUp {
   0% {
@@ -2235,9 +2287,6 @@ body {
   visibility: visible !important;
   display: block; }
 
-@keyframes slideUp {
-  100% {
-    bottom: -400px; } }
 .form-salida {
   -webkit-transition: form-salida 2s ease-in-out;
   -moz-transition: form-salida 2s ease-in-out;

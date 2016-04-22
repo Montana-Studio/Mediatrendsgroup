@@ -4881,12 +4881,7 @@
 						<input class="input-form enviar-submit" type="submit" value="Enviar">
 					</form>
 				</div>
-				<div class="form-send">
-					¡Mensaje enviado con exito!
-				</div>
-				<div class="form-send">
-					No se ha enviado el mensaje. Intentalo nuevamente.
-				</div>
+				<div class="form-send" id="exito"></div>
 			</div>
 			<div class="btn-text">Contactar</div>
 		</div>

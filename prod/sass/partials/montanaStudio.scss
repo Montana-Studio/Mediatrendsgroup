@@ -139,12 +139,14 @@
 					text:{decoration:none;transform:uppercase;}
 					color:#fff;
 					background:#fc6aae;
+					border: 1px solid #fc6aae;
 					padding: 11px 40px;
 					border-radius: 5px;
 					font-size: 13px;
 					margin: 0 auto;
 					display: block;
 					float: none;
+					@include transition(all 0.3s ease-in-out);
 					@include media($mobile) {
 						@include outer-container(90%);
 					}
@@ -153,6 +155,14 @@
 					}
 					@include media($mobileLand) {
 						@include outer-container(40%);
+					}
+					@include media($desktop) {
+						@include outer-container(30%);
+					}
+					&:hover {
+						background:none;
+						color:#fc6aae;
+						border:1px solid #fc6aae;
 					}
 				}
 			}

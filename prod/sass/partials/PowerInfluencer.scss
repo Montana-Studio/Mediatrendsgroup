@@ -108,6 +108,7 @@
 	    			border-radius: 5px;
 	    			text-transform: uppercase;
 	    			text:{align:center;}
+	    			@include transition(all 0.3s ease-in-out);
 	    			@include media($tablet) {
 						float: left;
 						margin: 0 auto;
@@ -123,6 +124,15 @@
 	    				height: 100%;
 	    				display: block;
 	    				color: $greenPI;
+
+	    			}
+	    			&:hover {
+	    				background:$greenPI;
+						color:$whitecolor;
+						border: 1px solid $greenPI;
+						a {
+							color:$whitecolor;
+						}
 	    			}
 				}
 			}
