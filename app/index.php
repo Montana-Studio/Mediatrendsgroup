@@ -10,6 +10,13 @@
 	<link rel="stylesheet" target="_blank" href="css/swiper.min.css">
 	<link rel="stylesheet" target="_blank" href="css/_MediatrendsGroup.css">
 	<script src="js/jquery.min.js"></script>
+
+	<meta property="og:title" content="Mediatrends Group" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://mediatrendsgroup.com/" />
+	<meta property="og:image" content="http://mediatrendsgroup.com/img/mediatrends-group.jpg" />
+	<meta property="og:description" content="Somos un holding enfocado en generar valor integral para marcas en ecosistemas digitales." />
+	<meta property="og:site_name" content="Mediatrends Group" />
 	
 </head>
 <body>
@@ -1364,7 +1371,7 @@
 							</li>
 							<li>
 								<div class="logotipe-box">
-									<a class="logo-mediatrends" >
+									<a href="http://mediatrends.cl/" target="_blank" class="logo-mediatrends" >
 										<svg viewBox="0 0 300 300">
 											<g>
 												<g>
@@ -1997,7 +2004,7 @@
 							<li>
 								<div class="logotipe-box">
 									<a target="_blank" href="http://www.powerinfluencer.com/" id="PowerInfluencerHome">
-										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+										<svg viewBox="0 0 300 300">
                                             <g>
                                                 <g>
                                                     <linearGradient id="SVGID_111_" gradientUnits="userSpaceOnUse" x1="171.4447" y1="119.7711" x2="142.9307" y2="149.2982" gradientTransform="matrix(0.9996 -0.0265 0.0265 0.9996 -3.6845 -0.7648)">
@@ -4865,29 +4872,38 @@
 		<div id="btn-contactar" class="contactar-mediatrendsGroup">
 			<div class="contactar-form">
 				<div class="close-form"><i class="fa fa-close"></i></div>
-				<h3>Contactanos</h3>
-				<form>
-					<input class="input-form" type="text" placeholder="Nombre" id="nombre">
-					<input class="input-form" type="email" placeholder="Correo" id="correo">
-					<textarea class="input-form" name="" cols="30" rows="10" placeholder="Mensaje" id="mensaje"></textarea>
-					<input class="input-form enviar-submit" type="submit" value="Enviar">
-				</form>
+				<div class="formulario-contacto">
+					<h3>Contáctanos</h3>
+					<form>
+						<input class="input-form" type="text" placeholder="Nombre" id="nombre">
+						<input class="input-form" type="email" placeholder="Correo" id="correo">
+						<textarea class="input-form" name="" cols="30" rows="10" placeholder="Mensaje" id="mensaje"></textarea>
+						<input class="input-form enviar-submit" type="submit" value="Enviar">
+					</form>
+				</div>
+				<div class="form-send">
+					¡Mensaje enviado con exito!
+				</div>
+				<div class="form-send">
+					No se ha enviado el mensaje. Intentalo nuevamente.
+				</div>
 			</div>
 			<div class="btn-text">Contactar</div>
 		</div>
-		<div class="social-MTG">
+		<!--div class="social-MTG">
 			<ul>
-				<li><a target="_blank" href="https://www.facebook.com/pages/Media-Trends-Group"><i class="fa fa-facebook"></i></a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/company/10545632?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_10545632%2Cidx%3A0"><i class="fa fa-linkedin"></i></a></li>
 			</ul>
-		</div>
+		</div-->
 		<div class="info-MTGFooter">
 			<ul>
-				<li class="footer-list-first"><i class="fa fa-phone"></i>Telefono: 123456789 </i></li>
-				<li><i class="fa fa-map-marker"></i>Huelen 265, Providencia Santiago de Chile.</li>
+				<li class="linkedin-footer"><a target="_blank" href="https://www.linkedin.com/company/10545632?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_10545632%2Cidx%3A0"><i class="fa fa-linkedin"></i></a></li>
+				<li class="footer-list-first"><i class="fa fa-phone"></i>Teléfono: 222059191 </i></li>
+				<li><i class="fa fa-map-marker"></i>Huelén 265 of 41, Providencia, Santiago de Chile.</li>
 			</ul>
 		</div>
 		<div class="derechos">
-			<i class="fa fa-copyright"></i>bibendum condimentum sapien scelerisque, semper gravida arcu.
+			<i class="fa fa-copyright"></i> 2016 Copyright Media Trends Group.
 		</div>
 	</div>
 	<script src="js/parallax.min.js"></script>

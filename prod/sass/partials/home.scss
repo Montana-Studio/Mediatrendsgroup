@@ -4,16 +4,34 @@
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
+	@include media($mobile) {
+		height: 480px;
+	}
+	@include media($mobileLand) {
+		height: 400px;
+	}
+	@include media($tablet) {
+		height: 1030px;
+	}
+	@include media($tabletLand) {
+		height: 770px;
+	}
 	@include media($notebook) {
 		height: 900px;
 	}
+	@include media($desktop) {
+		height:1000px;
+	}
 	.parallax-window {
 	    min-height: 400px;
-	    height: 670px;
+	    height:inherit;
 	    background: transparent;
 	    @include media($notebook) {
 	    	height: 900px;
 	    }
+	    @include media($desktop) {
+			height:1000px;
+		}
 	}
 	.content-logotipes {
 		@include span-columns(12);
@@ -27,6 +45,15 @@
 			vertical-align: middle;
 			.mediatrends-group {
 				@include outer-container(60%);
+				@include media($tablet) {
+					@include outer-container(40%);
+				}
+				@include media($tabletLand) {
+					@include outer-container(25%);
+				}
+				@include media($mobileLand) {
+					@include outer-container(30%);
+				}
 				a {
 					width: 100%;
 					height: auto;
@@ -34,6 +61,7 @@
 						width: 100%;
 						height: auto;
 						display: block;
+						max-height: none;
 					}
 				}
 				@include media($notebook) {
@@ -48,6 +76,23 @@
 					margin:0 auto;
 					display: table-cell;
 					vertical-align: middle;
+					@include media($mobileLand) {
+						width: 90%;
+						margin: 0 auto !important;
+						padding: 0 !important;
+						display: block;
+						float: none;
+					}
+					@include media($tabletLand) {
+						margin: 0 auto !important;
+						display: block;
+						float: none;
+					}
+					@include media($tablet) {
+						margin: 0 auto !important;
+						display: block;
+						float: none;
+					}
 					@include media($notebook) {
 						@include outer-container(80%);
 						margin:0 auto !important;
@@ -60,6 +105,22 @@
 						display: inline-block;
 						@include span-columns(5);
 						height: 134px;
+						@include media($mobile) {
+							height: 90px;
+						}
+						@include media($mobileLand) {
+							@include span-columns(3);
+						}
+						@include media($tablet) {
+							@include span-columns(2.5);
+						    display: inline-block;
+						    float: initial;
+						}
+						@include media($tabletLand) {
+							@include span-columns(2.5);
+						    display: inline-block;
+						    float: initial;
+						}
 						@include media($notebook) {
 							@include span-columns(1.8);
 							display: inline-block;
@@ -137,10 +198,40 @@
 			color: $blackcolor;
 			background:$whitecolor;
 		}
+		@include media($mobile) {
+			bottom:5px;
+		}
+		@include media($mobileLand) {
+			bottom:17px;
+		}
+		@include media($tablet) {
+			@include outer-container(78%);
+			bottom: 200px;
+			font-size: 22px;
+			margin: 0 auto !important;
+			left: 0;
+			right: 0;
+		}
+		@include media($tabletLand) {
+			@include outer-container(78%);
+			bottom: 70px;
+			font-size: 22px;
+			margin: 0 auto !important;
+			left: 0;
+			right: 0;
+		}
     	@include media($notebook) {
     		font-size: 25px;
     		bottom: 180px; 
     		padding: 0 400px;
     	}
+    	@include media($desktop) {
+			@include outer-container(80%);
+			bottom: 100px;
+			font-size: 22px;
+			margin: 0 auto !important;
+			left: 0;
+			right: 0;
+		}
 	}
 }	

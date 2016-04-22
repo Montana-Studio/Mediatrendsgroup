@@ -10,6 +10,12 @@
 		z-index: 9999;
 		overflow: hidden;
 		height: 85px;
+		@include media($tabletLand) {
+			@include span-columns(6);
+			float: right;
+			height: 200px;
+			margin: 0;
+		}
 		@include media($notebook) {
 			@include span-columns(6);
 			float: right;
@@ -29,6 +35,9 @@
 			padding: 30px 0;
 			display: block;
 			cursor: pointer;
+			@include media($tabletLand) {
+				padding: 80px 0;
+			}
 			@include media($notebook) {
 				padding: 100px 0;
 			}
@@ -45,6 +54,13 @@
 			z-index: 99;
 			bottom: 80px;
 			margin:0;
+			@include media($tablet) {
+				bottom:200px;
+			}
+			@include media($tabletLand) {
+				padding: 90px 60px;
+				bottom: 200px;
+			}
 			@include media($notebook) {
 				@include span-columns(12);
 				bottom:200px;
@@ -97,7 +113,7 @@
 		@include span-columns(12);
 		text:{align: center;}
 		@include media($notebook) {
-			@include span-columns(6);
+			@include span-columns(1);
 			margin: 0;
 			padding: 20px 0;
 		}
@@ -124,6 +140,10 @@
 					border-radius: 50%;
 					font:{size: 30px;}
 					text:{decoration:none;}
+					@include media($mobile) {
+						width: 40px;
+						height: 40px;
+					}
 					@include media($notebook) {
 						width: 40px;
 						height: 40px;
@@ -139,13 +159,20 @@
 	}
 	.info-MTGFooter {
 		@include span-columns(12);
+		@include media($tabletLand) {
+			@include span-columns(6);
+			padding: 20px 0;
+			float: left;
+			margin:0;
+		}
 		@include media($notebook) {
 			@include span-columns(6);
+			padding: 20px 0;
 			float: left;
 			margin:0;
 		}
  		ul {
-			@include outer-container(60%);
+			@include outer-container(100%);
 			margin:0 auto;
 			float: none;
 			padding:10px 0;
@@ -158,12 +185,17 @@
 				padding:10px 0;
 			}
 			li {
+				width: auto;
 				list-style: none;
 				font:{size: 14px;}
 				margin:{bottom:5px;}
-				padding:{bottom:5px;}
-				@include media($notebook) {
-					@include span-columns(5);
+				padding:{top:5px; bottom:5px;}
+				margin: 0 auto !important;
+				@include media($mobile) {
+					font:{size: 12px;}
+				}
+				@include media($mobileLand) {
+					font:{size: 12px;}
 				}
 				i {
 					font:{size: 19px;}
@@ -174,7 +206,28 @@
 				}
 				&.footer-list-first {
 					@include media($notebook) {
-						text:{align:right;}
+						//text:{align:right;}
+					}
+				}
+				&.linkedin-footer {
+					width: 50px;
+					a {
+						width: 40px;
+						height: 40px;
+						display: table;
+						margin: 0 auto;
+						background: $whitecolor;
+						border-radius: 50%;
+						font:{size: 30px;}
+						text:{decoration:none;}
+						i {
+							border:0;
+							color:$blackcolor;
+							display: table-cell;
+							vertical-align: middle;
+							font:{size: 24px;}
+							padding:{left: 9px;}
+						}
 					}
 				}
 			}
@@ -186,6 +239,10 @@
 		font:{size: 11px;}
 		text:{align:center;}
 		padding:{bottom:10px;}
+		@include media($tabletLand) {
+			@include span-columns(6);
+			margin:0;
+		}
 		@include media($notebook) {
 			@include span-columns(6);
 			margin:0;

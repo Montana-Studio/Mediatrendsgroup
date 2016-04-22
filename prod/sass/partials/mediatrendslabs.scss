@@ -5,6 +5,12 @@
 	padding: 30px 0;
 	height: 700px;
 	display: table;
+	@include media($mobileLand) {
+		height: 500px;
+	}
+	@include media($tablet) {
+		height: 900px;
+	}
 	@include media($notebook) {
 		height: 1000px;
 	}
@@ -16,6 +22,21 @@
 			@include outer-container(50%);
 			float: none;
 			margin: 0 auto;
+			@include media($mobileLand) {
+				@include outer-container(30%);
+				float: none;
+				margin: 0 auto;
+			}
+			@include media($tablet) {
+				@include outer-container(40%);
+				float: none;
+				margin: 0 auto;
+			}
+			@include media($tabletLand) {
+				@include outer-container(30%);
+				float: none;
+				margin: 0 auto;
+			}
 			@include media($notebook) {
 				@include outer-container(20%);
 				float: none;
@@ -31,6 +52,21 @@
 			@include outer-container(90%);
 			float: none;
 			margin: 0 auto;
+			@include media($mobileLand) {
+				@include outer-container(80%);
+				float: none;
+				margin: 0 auto;
+			}
+			@include media($tablet) {
+				@include outer-container(70%);
+				float: none;
+				margin: 0 auto;
+			}
+			@include media($tabletLand) {
+				@include outer-container(60%);
+				float: none;
+				margin: 0 auto;
+			}
 			@include media($notebook) {
 				@include outer-container(30%);
 				float: none;
@@ -49,7 +85,22 @@
 			margin:{top:20px;}
 			a {	
 				@include outer-container(45%); 
-					@include media($notebook) {
+				@include media($mobileLand) {
+					@include outer-container(30%);
+					float: none;
+					margin: 0 auto;
+				}
+				@include media($tablet) {
+					@include outer-container(30%);
+					float: none;
+					margin: 0 auto;
+				}
+				@include media($tabletLand) {
+					@include outer-container(25%);
+					float: none;
+					margin: 0 auto;
+				}
+				@include media($notebook) {
 					@include outer-container(10%);
 					float: none;
 					margin: 0 auto;

@@ -3,6 +3,9 @@
 	background:$blackcolor;
 	position: relative;
 	height: 800px;
+	@include media($tablet) {
+		height: 1030px;
+	}
 	@include media($notebook) {
 		height: 1000px;
 	}
@@ -11,6 +14,9 @@
 		position: absolute;
 		z-index: 99;
 		padding: {top:20px;}
+		@include media($tablet) {
+			padding: {top:40px;}
+		}
 		@include media($notebook) {
 			padding: {top:80px;}
 		}
@@ -18,6 +24,14 @@
 			@include outer-container(35%);
 			float: none;
 			margin: 0 auto;
+			@include media($mobileLand) {
+				@include outer-container(20%);
+				margin:{top:10px;bottom: 30px;}
+			}
+			@include media($tabletLand) {
+				@include outer-container(20%);
+				margin:{top:10px;bottom: 30px;}
+			}
 			@include media($notebook) {
 				@include outer-container(14%);
 			}
@@ -79,11 +93,34 @@
 					font:{size:0.8em;}
 					color:$whitecolor;
 					margin:{bottom:10px;}
+					@include media($tablet) {
+						@include outer-container(70%);
+						float: none;
+						margin:0 auto;
+						display: block;
+					}
+					@include media($tabletLand) {
+						@include outer-container(80%);
+						float: none;
+						margin:0 auto;
+						display: block;
+					}
 				}
 			}
 			.box-logos {
 				width: 100%;
 	        	height: 300px;
+	        	@include media($tablet) {
+	        		width: 80%;
+					margin: 30px auto;
+					display: block;
+	        	}
+	        	@include media($tabletLand) {
+	        		width: 100%;
+					margin: 30px auto;
+					display: block;
+					height: 200px;
+	        	}
 	        	@include media($notebook) {
 	        		height: 200px;
 	        	}
@@ -108,6 +145,10 @@
 							margin: 0 auto !important;
 							padding: 0;
 							text:{align:center;}
+							@include media($mobileLand) {
+								@include outer-container(60%);
+								margin:{top:40px !important;}
+							}
 							@include media($notebook) {
 								@include outer-container(60%);
 								margin:{top:40px !important;}
@@ -118,6 +159,9 @@
 								float: none;
 								display: inline-block;
 								margin:{right:10px;}
+								@include media($tabletLand) {
+									@include span-columns(3);
+								}
 								@include media($notebook) {
 									@include span-columns(3);
 								}
@@ -204,8 +248,10 @@
 	}
 	.swiper-button-next {
 		background-image:url(../img/arrow-right.png);
+		right: 0px;
 	}
 	.swiper-button-prev {
 		background-image:url(../img/arrow-left.png);
+		left: 0px;
 	}
 }

@@ -3,6 +3,12 @@
 	background-image: url(../img/power-influencer-bg.jpeg);
 	background-size: cover;
 	padding: 30px 0;
+	@include media($tablet) {
+		padding:{top:60px;bottom:70px;}
+	}
+	@include media($tabletLand) {
+		padding:60px 0;
+	}
 	@include media($notebook) {
 		padding:{top:50px;bottom:70px;}
 	}
@@ -10,6 +16,12 @@
 		@include span-columns(7);
 		margin:0 auto !important;
 		float: none;
+		@include media($tabletLand) {
+			@include span-columns(5);
+			margin:0 auto !important;
+			float: none;
+			padding: 20px 0;
+		}	
 		@include media($notebook) {
 			@include span-columns(3);
 			margin:0 auto !important;
@@ -19,6 +31,9 @@
 	}
 	.content-PI {
 		@include outer-container(80%);
+		@include media($mobileLand) {
+			@include outer-container(90%);
+		}
 		@include media($notebook) {
 			@include outer-container(70%);
 			padding: 50px 0;
@@ -30,6 +45,25 @@
 			}
 			.info-PI {
 				@include span-columns(12);
+				@include media($mobileLand) {
+					@include span-columns(6);	
+					float: none;
+					display: inline-block;
+					margin:{top:20px;right:0;left:0;}
+				}
+				@include media($tablet) {
+					float: none;
+					width: 80%;
+					display: block;
+					margin: 0 auto;
+					text-align: center;
+				}
+				@include media($tabletLand) {
+					@include span-columns(6);	
+					float: none;
+					display: inline-block;
+					margin:{top:100px;}
+				}
 				@include media($notebook) {
 					@include span-columns(5);	
 					float: none;
@@ -42,6 +76,13 @@
 	    			line-height: 38px;
 	    			color: $greenPI;
 	    			margin:{bottom:8px;}
+	    			@include media($mobile) {
+						font:{size: 1.5em;}
+						line-height: 32px;
+	    			}
+	    			@include media($tablet) {
+	    				@include span-columns(12);
+	    			}
 	    			@include media($notebook) {
 	    				@include span-columns(12);
 						font:{size: 3.75em;weight: 300;}
@@ -67,6 +108,13 @@
 	    			border-radius: 5px;
 	    			text-transform: uppercase;
 	    			text:{align:center;}
+	    			@include media($tablet) {
+						float: left;
+						margin: 0 auto;
+						display: block;
+						margin-left: 25%;
+						margin-bottom: 40px;
+	    			}
 	    			a {
 	    				text:{decoration:none;}
 	    				font:{size: 12px;}
@@ -81,6 +129,21 @@
 			.content-home-PI {
 				@include span-columns(12);
 				margin:{top:30px;}
+				@include media($mobileLand) {
+					@include span-columns(6);	
+					float: right;
+					display: inline-block;
+				}
+				@include media($tablet) {
+					@include span-columns(8);	
+					margin: 0 auto !important;
+					display: block;
+					float: none;
+				}
+				@include media($tabletLand) {
+					@include span-columns(6);	
+					float: right;
+				}
 				@include media($notebook) {
 					@include span-columns(7);	
 					float: right;
